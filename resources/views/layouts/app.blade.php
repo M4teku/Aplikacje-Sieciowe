@@ -25,8 +25,8 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background-color: #FAF3E0; /* LEKKO BEŻOWE TŁO CAŁEJ STRONY */
-            color: #3C2F2F; /* CIEMNY BRĄZ NA TEKST */
+            background-color: #FAF3E0; 
+            color: #3C2F2F; 
             font-family: 'Georgia', serif;
         }
         
@@ -103,7 +103,7 @@
             border-radius: 12px;
             box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
             transition: all 0.3s;
-            color: #3C2F2F; /* CIEMNY BRĄZ NA TEKST */
+            color: #3C2F2F; 
             overflow: hidden;
             position: relative;
         }
@@ -124,19 +124,19 @@
             border-color: var(--gold);
         }
         
-        /* TEKST W KARTACH - CIEMNIEJSZY */
+        
         .card-title {
-            color: #2C1810 !important; /* BARDZO CIEMNY BRĄZ */
+            color: #2C1810 !important; 
             font-weight: bold;
         }
         
         .card-subtitle {
-            color: #5D4037 !important; /* ŚREDNI BRĄZ */
+            color: #5D4037 !important; 
             font-weight: 500;
         }
         
         .card-text {
-            color: #4A3728 !important; /* CIEMNY BRĄZ */
+            color: #4A3728 !important; 
         }
         
         .alert-success {
@@ -236,7 +236,7 @@
             max-width: 1200px;
         }
         
-        /* DODATKOWE: Linki w tekście */
+        
         a {
             color: var(--rust);
             text-decoration: none;
@@ -248,13 +248,13 @@
             text-decoration: underline;
         }
         
-        /* Tekst pomocniczy */
+        
         .text-muted {
-            color: #8D6E63 !important; /* JAŚNIEJSZY BRĄZ */
+            color: #8D6E63 !important; 
         }
         
         .lead {
-            color: #5D4037; /* ŚREDNI BRĄZ */
+            color: #5D4037; 
         }
     </style>
 </head>

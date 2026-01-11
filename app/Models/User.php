@@ -16,13 +16,6 @@ class User extends Model
     protected $fillable = ['login', 'password', 'email'];
     protected $hidden = ['password'];
     
-    // Hashuje hasło przy zapisie
-    public function setPasswordAttribute($value)
-    {
-        $this->attributes['password'] = Hash::make($value);
-    }
-    
-    // Relacje
     public function roles()
     {
         return $this->belongsToMany(Role::class, 'user_role', 'id_user', 'id_role')

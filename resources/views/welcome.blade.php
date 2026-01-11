@@ -38,7 +38,7 @@
     </style>
 </head>
 <body>
-    <!-- Nawigacja -->
+  
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand fw-bold" href="/">📚 BookTracker</a>
@@ -58,7 +58,7 @@
         </div>
     </nav>
 
-    <!-- Główna sekcja -->
+  
     <div class="container">
         @if(session('success'))
             <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
@@ -77,7 +77,7 @@
         @yield('content')
     </div>
 
-    <!-- Hero Section -->
+ 
     <div class="hero-section text-center">
         <div class="container">
             <h1 class="display-4 mb-4">📖 BookTracker</h1>
@@ -117,14 +117,7 @@
                 @endif
             </div>
             
-            <!-- Testowe dane -->
-            <div class="mt-5 text-muted">
-                <small>
-                    Dane testowe:<br>
-                    <strong>Admin:</strong> login: admin, hasło: admin123<br>
-                    <strong>Użytkownik:</strong> zarejestruj nowe konto
-                </small>
-            </div>
+            
         </div>
     </div>
 

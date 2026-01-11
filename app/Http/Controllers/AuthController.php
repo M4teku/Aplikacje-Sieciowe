@@ -22,7 +22,6 @@ class AuthController extends Controller
     
     public function login(Request $request)
     {
-        // DEBUG
         \Log::info('LOGIN ATTEMPT:', ['login' => $request->login]);
         
         $request->validate([
@@ -108,7 +107,7 @@ class AuthController extends Controller
             $user = User::create([
                 'login' => $validated['login'],
                 'email' => $validated['email'],
-                'password' => $validated['password'],
+                'password' => Hash::make($validated['password']), // TUTAJ POPRAWIĆ - DODAĆ Hash::make
             ]);
             
             \Log::info('USER CREATED', ['id' => $user->id_user]);
